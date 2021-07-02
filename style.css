@@ -84,6 +84,7 @@ p {
     display: inline;
     text-align: right;
     margin-bottom: 30px;
+    z-index: 0;
 }
 
 .navmenu {
@@ -112,13 +113,23 @@ p {
     padding-left: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
+    z-index: 1;
 }
 
 .navmenu ul li a {
     text-decoration: none;
     color: #000;
+    z-index: 1;
 }
 
+.highlightedprojectsarea {
+    
+    
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .highlightedprojects {
     /*display: flex;
     flex-wrap: wrap;
@@ -138,22 +149,47 @@ p {
     list-style: none;
     justify-content: flex-start ;
     align-content: flex-start;
-    align-items: stretch;
+    align-items: flex-start;
 }
   
 .highlightedprojects li {
     
-    
+     
 }
 
 .highlightedprojects li:last-child {
-    height: 20vh;
+    
     flex-grow: 10;
 }
   
 .highlightedprojects img {
-    object-fit: cover;
+    object-fit: fill;
     vertical-align: bottom;
+}
+
+#imageone{
+    width: 1088px;
+    height: 284px;
+}
+
+#imagetwo{
+    width: 344px;
+    height: 0px;
+}
+
+#imagethree{
+    width: 724px;
+    height: 196px;
+    margin-left: 364px;
+}
+
+#imagefour{
+    margin-left: 364px;
+    height: 0px;
+}
+
+#imagefive {
+    margin-left: 704px;
 }
 
 
