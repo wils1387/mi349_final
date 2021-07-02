@@ -19,20 +19,25 @@ h2 {
     color: #979797;
 }
 
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
 .homepageheaders {
-    display: flex;
-    justify-content: space-between;
+    display: inline;
+    
 }
 
 .homepageheaders h2 {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
-div {
+/*div {
     margin: 0px;
     padding: 0px;
     max-height: 60px;
-}
+}*/
 
 /*img {
     max-height: 100%;
@@ -51,21 +56,34 @@ p {
     line-height: 1.2;
     position: sticky;
     top: 0px;
+    
 }
 
 .titlecard p {
     color: #979797;
-    margin: 0;
+    margin-top: 10px;
     margin-right: 65px;
     font-size: 24px;
+    line-height: 10px;
 }
 
 .homepageheader {
-    vertical-align: middle;
+    
 }
 
 #composer {
     margin-right:25px;
+}
+
+#highlighted {
+    text-align: left;
+    display: inline;
+}
+
+#austinwilson {
+    display: inline;
+    text-align: right;
+    margin-bottom: 30px;
 }
 
 .navmenu {
@@ -78,7 +96,7 @@ p {
     top: 0px;
     font-size: 24px;
     height: 62px;
-    vertical-align: baseline;    
+    z-index: 0; 
 }
 
 .navmenu ul {
@@ -86,7 +104,8 @@ p {
     margin: 0;
     padding: 0;
     display: flex;
-    
+    top: 0px;
+    z-index: 1;
 }
 
 .navmenu ul li {
@@ -101,17 +120,42 @@ p {
 }
 
 .highlightedprojects {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
     flex-grow: 10;
-    margin-left: auto;
-    margin-right: auto;
+    */
     margin-top: 60px;
     width: 1088px;
-    height: 814px;
+    text-align: center;
+    /*height: 814px;*/
 }
+
+.highlightedprojects ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+  
+.highlightedprojects li {
+    
+    flex-grow: 1;
+}
+
+.highlightedprojects li:last-child {
+    height: 40vh;
+    flex-grow: 1;
+}
+  
+.highlightedprojects img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+
 
 /*------------------------------------------about-----------------------------------------------*/
 .aboutme {
