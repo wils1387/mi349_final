@@ -127,8 +127,8 @@ p {
     flex-grow: 10;
     */
     margin-top: 60px;
-    width: 1088px;
-    text-align: center;
+    width: 40%;
+    text-align: left;
     /*height: 814px;*/
 }
 
@@ -136,21 +136,22 @@ p {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: flex-start ;
+    align-content: flex-start;
+    align-items: stretch;
 }
   
 .highlightedprojects li {
     
-    flex-grow: 1;
+    
 }
 
 .highlightedprojects li:last-child {
-    height: 40vh;
-    flex-grow: 1;
+    height: 20vh;
+    flex-grow: 10;
 }
   
 .highlightedprojects img {
-    max-height: 100%;
-    min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
 }
